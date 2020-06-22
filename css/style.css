@@ -1,0 +1,595 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, p, ul{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    font-family: 'Gentium Book Basic', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Yeseva One', cursive;
+}
+/* banner css start */
+.banner{
+   position: relative;
+}
+/* top soc icon css start */
+.soc-icon{
+    display: flex;
+    justify-content:flex-end;
+}
+.soc-icon .fab{
+    color: #dab33e;
+}
+
+/* navbar css start */
+
+.navbar{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.0) , rgba(0,0,0,0.5) 50% );
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: 1;
+    
+}
+.navbar button{
+    outline: 0;
+}
+
+.toggler-icn{
+    color:white;
+    font-size: 20px;
+}
+
+.navbar .nav-item .nav-link{
+    color: #fff;
+    text-transform: capitalize;
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: 700;
+    font-size: 21px;
+    position: relative;
+    
+}
+.navbar .nav-item .nav-link::before{
+    content: '';
+    position: absolute;
+    top: -28px;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-top: 3px solid #fff;
+    transform: scaleX(0);
+    transition: .5s;
+}
+.navbar .nav-item .nav-link:hover{
+    color: #fff;
+}
+.navbar .nav-item .nav-link:hover:before{
+    transform: scaleX(1);
+}
+
+
+.banner-con{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+.banner-con h2{
+    color: #f6f6f3;
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 90px;
+    
+}
+.banner-button{
+    position: absolute;
+    top:77%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+   
+}
+.bn-bt{
+    height: 58px;
+    width: 228px;
+    margin: 0px 15px;
+    background-color: rgba(190, 178, 112, 0.34);
+    border: 2px solid rgba(231, 222, 186, 0.47);
+    color: #faf9f3;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: .5s;
+    
+}
+.bn-bt:hover{
+    background: rgba(0, 0, 0, 0.74);
+    border: 2px solid black;
+    color: #fff;
+}
+.banner-button button{
+    outline: 0px;   
+}
+/* about section start */
+
+.banner-about{
+    background-image: url(../image/section2bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:70px 0px;
+}
+
+
+.heading-common{
+    color:#cc9900;
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    padding-bottom: 30px
+}
+#about p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4c4c4c;
+    padding: 10px 45px 30px 45px;
+}
+
+/* ingredients start */
+.banner-ing{
+    background-image: url(../image/ingredientsbg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0px;
+}
+.content-ing{
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    padding: 75px 65px;
+    color: #fff;
+}
+.header-ing{
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+}
+.content-ing p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 30px 0px 68px 0px;
+}
+.image-ing{
+    width: 100%;
+}
+/* menu start */
+.banner-menu{
+    background-image: url(../image/menubg.png);
+    padding: 70px 0px;
+}
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ded0a0;
+}
+.item-name, .item-price{
+    color: #c89f2d;
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 21px;
+}
+.menulist p{
+    color: #4c4c4c;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+.menulist{
+    padding: 0px 5px;
+    
+}
+.special{
+    border: 1px solid #ded0a0;
+    position: relative;
+}
+.special .texts{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background: #d6b969;
+    height: 22px;
+    width: 70px;
+    text-align: center;
+    color: #fff;
+    line-height: 22px;
+    position: absolute;
+    top: -22px;
+    right: 0;
+    
+}
+.appetiser{
+    padding-top: 30px;
+}
+
+/* reviews start */
+
+.content-reviews{
+    padding: 80px 60px 100px 60px;
+    background: rgba(0, 0, 0, 0.8);
+}
+.banner-reviews{
+    background-image: url(../image/rieviewbanner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 100px 0px;
+}
+.banner-reviews p{
+    color: #dde0df;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    
+  
+}
+.quote{
+    padding: 35px 0px 45px 0px;
+    font-size: 25px;
+    position: relative;
+}
+.ldq{
+    font-size: 65px;
+    font-weight: 700;
+    position: absolute;
+    top: 10px;;
+    left:-20px;
+}
+.comentor{
+    font-size: 18px;
+}
+/* reservation start */
+.banner-reservation{
+    background-image: url(../image/reservationbg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0px;
+}
+#reservations p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4c4c4c;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+    line-height: 20px
+}
+form label{
+    color: #c9a131;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding-top: 20px
+}
+form label, form input{
+    width: 100%;
+    
+}
+form input{
+    background: transparent;
+    outline: none;
+    border: 2px solid #c8c6c6;
+    padding: 6px 20px;
+    color: #8c8c8c;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+        
+}
+#party-number{
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid #c8c6c6;
+    padding: 6px 20px;
+    color: #8c8c8c;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    
+}
+#reservations button{
+    height: 40px;
+    width: 200px;
+    background-color: #c89f2d;
+    outline: none;
+    border: none;
+    display: block;
+    margin: 30px auto 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    text-transform: capitalize;
+    
+}
+.contact-form{
+    padding: 0px 25px;
+}
+#reservations .heading-common{
+    padding-bottom: 0px;
+}
+footer{
+    background-color: #191919;
+    padding: 100px 0px;
+}
+.footer-heading{
+    color:#fefefe;
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 21px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    
+}
+.cards ul{
+    display: flex;
+    justify-content: center;
+}
+.cards ul li{
+    padding: 50px 10px 0px 10px;
+}
+.cards .fab{
+    height: 15px;
+    width: 20px;
+    line-height: 15px;
+    color: white; 
+    text-align: center;
+}
+.f-icons ul{
+    display: flex;
+    justify-content: center;
+}
+.f-icons .fab{
+    height: 17px;
+    width: 17px;
+    text-align: center;
+    line-height: 17px;
+    color: #fff;
+}
+.f-icons ul li{
+    padding: 50px 10px 0px 10px;
+}
+
+
+
+
+@media(max-width:1199px){
+    .banner-con h2{
+    font-weight: 400;
+    font-size: 60px;
+    
+    }
+    .bn-bt{
+    height: 50px;
+    width: 180px;
+    }
+}
+@media(max-width:991px){
+    
+    .navbar .nav-item .nav-link::before{
+    content: '';
+    top: -8px;
+    }
+    .navbar-brand img{
+       height: 50%;
+        width: 50%;
+    }
+    .navbar .nav-item .nav-link{
+   
+    font-weight: 400;
+    font-size: 16px;
+    
+    
+}
+    .banner-con h2{
+    font-weight: 400;
+    font-size: 45px;
+    
+    }
+    .bn-bt{
+    height: 45px;
+    width: 150px;
+    }
+}
+@media(max-width:767px){
+  
+   
+    .navbar .nav-item .nav-link::before{
+    content: '';
+    top:90%;
+    width: 100%;
+    
+    }
+    .navbar{
+        background: rgba(0, 0, 0, 0.80);
+        
+    }
+    .navbar-collapse{
+        text-align:center; 
+        
+        
+    }
+    
+    .navbar-collapse .navbar-nav .nav-item .nav-link{
+       
+       padding: 5px 10px;
+    }
+    
+    
+    
+    .soc-icon{
+    justify-content:center;
+    }
+     .banner-con h2{
+    font-weight: 400;
+    font-size: 30px;
+    
+    }
+    .bn-bt{
+    height: 30px;
+    width: 100px;
+     font-size: 10px;
+    }
+    .banner-con img{
+        height: 20%;
+        width: 20%;
+    }
+    .content-ing{
+        padding: 20px 10px;
+    }
+    .content-reviews{
+        padding: 20px;
+       
+    }
+    .quote{
+        font-size: 16px;
+    }
+    .comentor{
+        font-size: 12px;
+    }
+    .contact-form{
+        margin-top: 20px;
+    }
+    footer{
+        padding: 20px;
+    }
+    .footer-sec{
+        padding: 20px 0px;
+    }
+    .f-icons ul li, .cards ul li{
+    padding: 10px 10px 0px 10px;
+}
+
+    
+}
+@media(max-width:599px){
+    .banner-con{
+        top: 50%;
+    }
+     .banner-con h2{
+    font-weight: 400;
+    font-size: 20px;
+    
+    }
+    .bn-bt{
+    height: 30px;
+    width: 90px;
+    font-size: 10px;
+     margin: 0px 10px;
+    }
+    
+}
+@media(max-width:399px){
+    .banner-con{
+        top: 55%;
+    }
+     .banner-con h2{
+    font-weight: 400;
+    font-size: 15px;
+    
+    }
+    .bn-bt{
+    height: 25px;
+    width: 70px;
+    font-size: 8px;
+     margin: 0px 5px;
+    }
+    .banner-button{
+        top:85%;
+    }
+    
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
